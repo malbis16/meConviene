@@ -33,10 +33,11 @@ export function Header() {
 
         <div className="flex items-center space-x-4">
           <Button
+            asChild
             variant="outline"
             className="hidden md:inline-flex border-primary text-primary hover:bg-primary hover:text-white bg-transparent"
           >
-            Contacto
+            <a href="#contacto">Contacto</a>
           </Button>
           <Button className="bg-primary hover:bg-primary/90 shadow-lg">Descargar App</Button>
           <Button variant="ghost" size="icon" className="md:hidden">

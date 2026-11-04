@@ -66,29 +66,48 @@ export function ContactSection() {
           {/* Contact Form */}
           <Card className="p-8">
             <h3 className="text-2xl font-bold text-foreground mb-6">Envíanos un Mensaje</h3>
-            <form className="space-y-6">
+            <form
+              action="mailto:contacto@meconviene.app"
+              method="post"
+              encType="text/plain"
+              className="space-y-6"
+            >
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">Nombre</label>
-                  <Input placeholder="Tu nombre completo" />
+                  <label htmlFor="contact-name" className="block text-sm font-medium text-foreground mb-2">
+                    Nombre
+                  </label>
+                  <Input id="contact-name" name="nombre" placeholder="Tu nombre completo" required />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">Email</label>
-                  <Input type="email" placeholder="tu@email.com" />
+                  <label htmlFor="contact-email" className="block text-sm font-medium text-foreground mb-2">
+                    Email
+                  </label>
+                  <Input id="contact-email" name="email" type="email" placeholder="tu@email.com" required />
                 </div>
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-foreground mb-2">Asunto</label>
-                <Input placeholder="¿En qué podemos ayudarte?" />
+                <label htmlFor="contact-subject" className="block text-sm font-medium text-foreground mb-2">
+                  Asunto
+                </label>
+                <Input id="contact-subject" name="asunto" placeholder="¿En qué podemos ayudarte?" />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-foreground mb-2">Mensaje</label>
-                <Textarea placeholder="Cuéntanos más sobre tu consulta o propuesta..." className="min-h-[120px]" />
+                <label htmlFor="contact-message" className="block text-sm font-medium text-foreground mb-2">
+                  Mensaje
+                </label>
+                <Textarea
+                  id="contact-message"
+                  name="mensaje"
+                  placeholder="Cuéntanos más sobre tu consulta o propuesta..."
+                  className="min-h-[120px]"
+                  required
+                />
               </div>
 
-              <Button className="w-full bg-secondary hover:bg-secondary/90" size="lg">
+              <Button type="submit" className="w-full bg-secondary hover:bg-secondary/90" size="lg">
                 <Send className="w-5 h-5 mr-2" />
                 Enviar Mensaje
               </Button>

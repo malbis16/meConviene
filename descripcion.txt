@@ -1,1 +1,11 @@
-Aquí se pondrá la descripción del proyecto.
+MeConviene - Landing Page
+
+MeConviene es una app móvil comparadora de precios que centraliza en un solo lugar los precios,
+promociones y ofertas de productos y servicios online, para que los consumidores de Bolivia y la
+región ahorren tiempo y dinero en cada compra.
+
+Esta landing page presenta la app: su propuesta de valor, misión, visión y valores, los objetivos
+del proyecto, el Business Model Canvas y un formulario de contacto para usuarios y comercios
+interesados en formar parte de la plataforma.
+
+Tecnologías: Next.js 14, React 18, TypeScript, Tailwind CSS 4 y shadcn/ui.
