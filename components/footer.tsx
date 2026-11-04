@@ -124,10 +124,10 @@ export function Footer() {
         </div>
 
         <div className="border-t border-primary/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-muted-foreground text-sm hover:text-foreground transition-colors duration-300">
+          <p className="text-muted-foreground text-sm text-center md:text-left hover:text-foreground transition-colors duration-300">
             © 2025 MeConviene. Todos los derechos reservados.
           </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-4 md:mt-0">
             <a
               href="#"
               className="text-muted-foreground hover:text-primary hover:underline hover:scale-105 text-sm transition-all duration-300"

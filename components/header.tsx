@@ -1,6 +1,13 @@
 import { Button } from "@/components/ui/button"
-import { Menu } from "lucide-react"
+import { MobileNav } from "@/components/mobile-nav"
 import Image from "next/image"
+
+const navLinks = [
+  { href: "#sobre-nosotros", label: "Sobre Nosotros" },
+  { href: "#objetivos", label: "Objetivos" },
+  { href: "#canvas", label: "Business Canvas" },
+  { href: "#contacto", label: "Contacto" },
+]
 
 export function Header() {
   return (
@@ -17,32 +24,29 @@ export function Header() {
         </div>
 
         <nav className="hidden md:flex items-center space-x-6">
-          <a href="#sobre-nosotros" className="text-muted-foreground hover:text-primary transition-colors font-medium">
-            Sobre Nosotros
-          </a>
-          <a href="#objetivos" className="text-muted-foreground hover:text-primary transition-colors font-medium">
-            Objetivos
-          </a>
-          <a href="#canvas" className="text-muted-foreground hover:text-primary transition-colors font-medium">
-            Business Canvas
-          </a>
-          <a href="#contacto" className="text-muted-foreground hover:text-primary transition-colors font-medium">
-            Contacto
-          </a>
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="relative py-1 text-muted-foreground hover:text-primary font-medium transition-all duration-300 hover:-translate-y-0.5 after:absolute after:left-0 after:-bottom-0.5 after:h-0.5 after:w-full after:origin-center after:scale-x-0 after:rounded-full after:bg-primary after:transition-transform after:duration-300 hover:after:scale-x-100 focus-visible:after:scale-x-100 motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+            >
+              {link.label}
+            </a>
+          ))}
         </nav>
 
         <div className="flex items-center space-x-4">
           <Button
             asChild
             variant="outline"
-            className="hidden md:inline-flex border-primary text-primary hover:bg-primary hover:text-white bg-transparent"
+            className="hidden md:inline-flex border-primary text-primary hover:bg-primary hover:text-white bg-transparent transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95 motion-reduce:transition-none motion-reduce:hover:scale-100"
           >
             <a href="#contacto">Contacto</a>
           </Button>
-          <Button className="bg-primary hover:bg-primary/90 shadow-lg">Descargar App</Button>
-          <Button variant="ghost" size="icon" className="md:hidden">
-            <Menu className="w-5 h-5" />
+          <Button className="bg-primary hover:bg-primary/90 shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-0.5 hover:shadow-xl active:scale-95 motion-reduce:transition-none motion-reduce:hover:scale-100 motion-reduce:hover:translate-y-0">
+            Descargar App
           </Button>
+          <MobileNav links={navLinks} />
         </div>
       </div>
     </header>
