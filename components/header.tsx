@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { Menu } from "lucide-react"
+import { MobileNav } from "@/components/mobile-nav"
 import Image from "next/image"
 
 const navLinks = [
@@ -46,13 +46,7 @@ export function Header() {
           <Button className="bg-primary hover:bg-primary/90 shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-0.5 hover:shadow-xl active:scale-95 motion-reduce:transition-none motion-reduce:hover:scale-100 motion-reduce:hover:translate-y-0">
             Descargar App
           </Button>
-          <Button
-            variant="ghost"
-            size="icon"
-            className="md:hidden group transition-all duration-300 hover:scale-110 active:scale-95 motion-reduce:transition-none motion-reduce:hover:scale-100"
-          >
-            <Menu className="w-5 h-5 transition-transform duration-300 group-hover:rotate-90 motion-reduce:transition-none" />
-          </Button>
+          <MobileNav links={navLinks} />
         </div>
       </div>
     </header>

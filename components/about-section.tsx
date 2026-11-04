@@ -84,23 +84,23 @@ export function AboutSection() {
             Nuestros Valores
           </h3>
           <div className="flex flex-wrap justify-center gap-4">
-            <Badge className="text-sm py-3 px-6 bg-primary text-white border-0 hover:scale-110 transition-transform duration-300 shadow-lg">
+            <Badge className="text-sm py-3 px-6 max-w-full whitespace-normal text-center bg-primary text-white border-0 hover:scale-110 transition-transform duration-300 shadow-lg">
               <Sparkles className="w-4 h-4 mr-2" />
               Transparencia
             </Badge>
-            <Badge className="text-sm py-3 px-6 bg-accent text-white border-0 hover:scale-110 transition-transform duration-300 shadow-lg animation-delay-200">
+            <Badge className="text-sm py-3 px-6 max-w-full whitespace-normal text-center bg-accent text-white border-0 hover:scale-110 transition-transform duration-300 shadow-lg animation-delay-200">
               <Sparkles className="w-4 h-4 mr-2" />
               Innovación
             </Badge>
-            <Badge className="text-sm py-3 px-6 bg-primary text-white border-0 hover:scale-110 transition-transform duration-300 shadow-lg animation-delay-400">
+            <Badge className="text-sm py-3 px-6 max-w-full whitespace-normal text-center bg-primary text-white border-0 hover:scale-110 transition-transform duration-300 shadow-lg animation-delay-400">
               <Sparkles className="w-4 h-4 mr-2" />
               Imparcialidad
             </Badge>
-            <Badge className="text-sm py-3 px-6 bg-accent text-white border-0 hover:scale-110 transition-transform duration-300 shadow-lg animation-delay-600">
+            <Badge className="text-sm py-3 px-6 max-w-full whitespace-normal text-center bg-accent text-white border-0 hover:scale-110 transition-transform duration-300 shadow-lg animation-delay-600">
               <Sparkles className="w-4 h-4 mr-2" />
               Cercanía con el usuario
             </Badge>
-            <Badge className="text-sm py-3 px-6 bg-primary text-white border-0 hover:scale-110 transition-transform duration-300 shadow-lg animation-delay-800">
+            <Badge className="text-sm py-3 px-6 max-w-full whitespace-normal text-center bg-primary text-white border-0 hover:scale-110 transition-transform duration-300 shadow-lg animation-delay-800">
               <Sparkles className="w-4 h-4 mr-2" />
               Compromiso con el desarrollo digital
             </Badge>

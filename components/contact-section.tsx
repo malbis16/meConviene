@@ -15,7 +15,7 @@ export function ContactSection() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-12 [&>*]:min-w-0">
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
@@ -59,7 +59,9 @@ export function ContactSection() {
                 Únete a nuestra plataforma y llega a más clientes. Obtén insights valiosos sobre tu mercado y aumenta tu
                 visibilidad online.
               </p>
-              <Button className="w-full bg-primary hover:bg-primary/90">Solicitar Información para Comercios</Button>
+              <Button className="w-full h-auto min-h-9 py-2 whitespace-normal bg-primary hover:bg-primary/90">
+                Solicitar Información para Comercios
+              </Button>
             </Card>
           </div>
 

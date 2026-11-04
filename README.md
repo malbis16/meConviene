@@ -14,7 +14,9 @@ Landing page de **MeConviene**, una app móvil comparadora de precios que centra
 | Business Model Canvas | `#canvas` | `components/business-canvas-section.tsx` |
 | Contacto (datos y formulario) | `#contacto` | `components/contact-section.tsx` |
 
-La cabecera (`components/header.tsx`) y el pie de página (`components/footer.tsx`) enlazan a estas anclas.
+La cabecera (`components/header.tsx`) y el pie de página (`components/footer.tsx`) enlazan a estas anclas. En móvil, la navegación se abre desde el botón ☰ en un panel lateral (`components/mobile-nav.tsx`).
+
+El diseño es responsive y está verificado sin desbordes horizontales en anchos de 320, 375 y 414 px.
 
 ## Tecnologías
 
@@ -40,21 +42,32 @@ Definida como variables CSS en `app/globals.css`:
 ## Requisitos
 
 - Node.js 18.17 o superior
-- npm (o pnpm)
+- [pnpm](https://pnpm.io/) 9 (el proyecto usa `pnpm-lock.yaml`)
 
 ## Cómo ejecutar
 
 ```bash
 # instalar dependencias
-npm install
+pnpm install
 
 # servidor de desarrollo en http://localhost:3000
-npm run dev
+pnpm dev
 
 # compilación de producción
-npm run build
-npm run start
+pnpm build
+pnpm start
 ```
+
+> Si no tienes pnpm instalado: `npm install -g pnpm@9` o `corepack enable`.
+
+## Despliegue en Vercel
+
+1. Sube el repositorio a GitHub.
+2. En [vercel.com/new](https://vercel.com/new) importa el repositorio. Vercel detecta Next.js y pnpm automáticamente; no hace falta cambiar ninguna configuración (Build Command `next build`, Output `.next`).
+3. No se requieren variables de entorno.
+4. Vercel Analytics ya está integrado (`@vercel/analytics`); para ver las métricas, actívalo en la pestaña **Analytics** del proyecto.
+
+Si agregas o actualizas dependencias, hazlo con `pnpm` para que `pnpm-lock.yaml` quede sincronizado: Vercel instala con el lockfile congelado y falla si no coincide con `package.json`.
 
 ## Estructura
 

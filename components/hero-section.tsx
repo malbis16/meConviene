@@ -32,7 +32,7 @@ export function HeroSection() {
                 alt="MeConviene Logo"
                 width={600}
                 height={240}
-                className="h-40 md:h-52 w-auto transform hover:scale-105 transition-all duration-300 drop-shadow-lg"
+                className="h-40 md:h-52 w-auto max-w-full object-contain transform hover:scale-105 transition-all duration-300 drop-shadow-lg"
                 priority
               />
             </div>

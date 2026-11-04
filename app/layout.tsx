@@ -1,5 +1,5 @@
 import type React from "react"
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
@@ -11,6 +11,12 @@ export const metadata: Metadata = {
   description:
     "Descubre la app que te ayuda a tomar las mejores decisiones. Me Conviene te guía hacia opciones que realmente te benefician.",
   generator: "v0.app",
+}
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#5d5491",
 }
 
 export default function RootLayout({
