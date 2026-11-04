@@ -60,7 +60,13 @@ export function ObjectivesSection() {
           {objectives.map((objective, index) => (
             <Card
               key={index}
-              className={`opacity-0 animate-fade-in-scale p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-2 hover:border-${objective.color}/50 group bg-gradient-to-br from-white to-${objective.color}/5 w-full sm:w-80 lg:w-72`}
+              className={`opacity-0 animate-fade-in-scale p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-2 group bg-gradient-to-br from-white w-full sm:w-80 lg:w-72 ${
+                objective.color === "primary"
+                  ? "hover:border-primary/50 to-primary/5"
+                  : objective.color === "secondary"
+                    ? "hover:border-secondary/50 to-secondary/5"
+                    : "hover:border-accent/50 to-accent/5"
+              }`}
               style={{ animationDelay: `${index * 200}ms` }}
             >
               <div className="flex flex-col items-center text-center space-y-4">

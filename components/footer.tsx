@@ -69,7 +69,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  href="#"
+                  href="#sobre-nosotros"
                   className="text-muted-foreground hover:text-primary hover:translate-x-1 transition-all duration-300 block"
                 >
                   Sobre Nosotros

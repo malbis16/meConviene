@@ -11,7 +11,10 @@ export function AboutSection() {
   const { ref: valuesRef, isVisible: valuesVisible } = useScrollAnimation(0.2)
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-muted/20 to-accent/5 relative overflow-hidden">
+    <section
+      id="sobre-nosotros"
+      className="py-20 px-4 bg-gradient-to-br from-muted/20 to-accent/5 relative overflow-hidden"
+    >
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-10 right-10 w-32 h-32 bg-primary/5 rounded-full animate-float animation-delay-200"></div>
         <div className="absolute bottom-20 left-10 w-24 h-24 bg-secondary/5 rounded-full animate-float animation-delay-600"></div>
