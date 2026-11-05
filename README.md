@@ -4,6 +4,14 @@ Landing page de **MeConviene**, una app móvil comparadora de precios que centra
 
 > "Tus mejores opciones, en un solo lugar"
 
+🏆 **43ª edición Shark UTEPSA – 3er Lugar**
+
+## Sobre la app
+
+MeConviene es una app móvil que centraliza y compara en tiempo real precios, menús y promociones de plataformas e-commerce. El usuario puede identificar la opción más conveniente, acceder a promociones exclusivas y ser redirigido hacia la plataforma seleccionada para concretar su compra.
+
+- 🎥 [Video explicativo de la app](https://youtu.be/UN_aS85WLj0)
+
 ## Secciones
 
 | Sección | Ancla | Componente |

@@ -1,11 +1,14 @@
 MeConviene - Landing Page
+43ª edición Shark UTEPSA – 3er Lugar
 
-MeConviene es una app móvil comparadora de precios que centraliza en un solo lugar los precios,
-promociones y ofertas de productos y servicios online, para que los consumidores de Bolivia y la
-región ahorren tiempo y dinero en cada compra.
+MeConviene es una app móvil que centraliza y compara en tiempo real precios, menús y promociones
+de plataformas e-commerce. El usuario puede identificar la opción más conveniente, acceder a
+promociones exclusivas y ser redirigido hacia la plataforma seleccionada para concretar su compra.
 
 Esta landing page presenta la app: su propuesta de valor, misión, visión y valores, los objetivos
 del proyecto, el Business Model Canvas y un formulario de contacto para usuarios y comercios
 interesados en formar parte de la plataforma.
+
+Video explicativo: https://youtu.be/UN_aS85WLj0
 
 Tecnologías: Next.js 14, React 18, TypeScript, Tailwind CSS 4 y shadcn/ui.
