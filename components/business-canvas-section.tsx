@@ -1,6 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
+import { ZoomableImage } from "@/components/zoomable-image"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 
 export function BusinessCanvasSection() {
@@ -43,7 +44,7 @@ export function BusinessCanvasSection() {
             imageVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
           }`}
         >
-          <img
+          <ZoomableImage
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Business%20Plan%20Presentation%20in%20Dark%20Purple%20and%20Pink%20Geometric%20Style%20%282%29-A8ZSV1kYzdUEHbugKEUB4AEXfaVfSN.png"
             alt="Business Model Canvas - MeConviene"
             className="w-full max-w-6xl rounded-2xl shadow-2xl hover:shadow-3xl transform hover:scale-[1.02] transition-all duration-500 border border-border/20"
@@ -66,12 +67,14 @@ export function BusinessCanvasSection() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
+                disabled
                 size="lg"
                 className="bg-primary hover:bg-primary/90 text-lg px-8 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
               >
                 Solicitar Demo
               </Button>
               <Button
+                disabled
                 size="lg"
                 variant="outline"
                 className="text-lg px-8 bg-transparent border-2 border-secondary text-secondary hover:bg-secondary hover:text-white transform hover:scale-105 transition-all duration-300"
