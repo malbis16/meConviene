@@ -37,13 +37,9 @@ export function Header() {
 
         <div className="flex items-center space-x-4">
           <Button
-            asChild
-            variant="outline"
-            className="hidden md:inline-flex border-primary text-primary hover:bg-primary hover:text-white bg-transparent transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95 motion-reduce:transition-none motion-reduce:hover:scale-100"
+            disabled
+            className="bg-primary hover:bg-primary/90 shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-0.5 hover:shadow-xl active:scale-95 motion-reduce:transition-none motion-reduce:hover:scale-100 motion-reduce:hover:translate-y-0"
           >
-            <a href="#contacto">Contacto</a>
-          </Button>
-          <Button className="bg-primary hover:bg-primary/90 shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-0.5 hover:shadow-xl active:scale-95 motion-reduce:transition-none motion-reduce:hover:scale-100 motion-reduce:hover:translate-y-0">
             Descargar App
           </Button>
           <MobileNav links={navLinks} />

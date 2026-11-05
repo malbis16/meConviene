@@ -82,6 +82,9 @@ public/         logo e íconos
 
 ## Notas
 
-- El formulario de contacto abre el cliente de correo del usuario (`mailto:contacto@meconviene.app`); no hay backend.
+- "Ver Demo" abre el [video explicativo de la app](https://youtu.be/UN_aS85WLj0) en una pestaña nueva.
+- Están desactivados temporalmente los botones "Descargar App", "Solicitar Información para Comercios", "Solicitar Demo", "Contactar Ventas" y el formulario "Envíanos un Mensaje" (campos y botón de envío, bloqueados con un `<fieldset disabled>` en `components/contact-section.tsx`). Para reactivarlos, quita el atributo `disabled`.
+- El formulario, cuando se reactive, abre el cliente de correo del usuario (`mailto:contacto@meconviene.app`); no hay backend.
+- El Business Model Canvas se puede ampliar (`components/zoomable-image.tsx`): al hacer clic o tocar la imagen se abre un visor a pantalla completa con zoom hasta 500 % mediante rueda del mouse, botones +/−, doble clic, pellizco o doble toque en móvil, y arrastre para moverse. También funciona con las teclas `+`, `-` y `0`.
 - La imagen del Business Model Canvas se carga desde Vercel Blob Storage.
-- Los botones "Descargar App", "Ver Demo", "Solicitar Demo" y "Contactar Ventas", y varios enlaces del pie de página, aún no tienen destino.
+- Varios enlaces del pie de página aún no tienen destino.

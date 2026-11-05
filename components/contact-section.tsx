@@ -59,7 +59,7 @@ export function ContactSection() {
                 Únete a nuestra plataforma y llega a más clientes. Obtén insights valiosos sobre tu mercado y aumenta tu
                 visibilidad online.
               </p>
-              <Button className="w-full h-auto min-h-9 py-2 whitespace-normal bg-primary hover:bg-primary/90">
+              <Button disabled className="w-full h-auto min-h-9 py-2 whitespace-normal bg-primary hover:bg-primary/90">
                 Solicitar Información para Comercios
               </Button>
             </Card>
@@ -72,47 +72,49 @@ export function ContactSection() {
               action="mailto:contacto@meconviene.app"
               method="post"
               encType="text/plain"
-              className="space-y-6"
             >
-              <div className="grid md:grid-cols-2 gap-4">
-                <div>
-                  <label htmlFor="contact-name" className="block text-sm font-medium text-foreground mb-2">
-                    Nombre
-                  </label>
-                  <Input id="contact-name" name="nombre" placeholder="Tu nombre completo" required />
+              {/* Formulario desactivado temporalmente: fieldset bloquea todos los campos y el botón de envío */}
+              <fieldset disabled className="space-y-6 min-w-0 border-0 p-0 m-0">
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <label htmlFor="contact-name" className="block text-sm font-medium text-foreground mb-2">
+                      Nombre
+                    </label>
+                    <Input id="contact-name" name="nombre" placeholder="Tu nombre completo" required />
+                  </div>
+                  <div>
+                    <label htmlFor="contact-email" className="block text-sm font-medium text-foreground mb-2">
+                      Email
+                    </label>
+                    <Input id="contact-email" name="email" type="email" placeholder="tu@email.com" required />
+                  </div>
                 </div>
+
                 <div>
-                  <label htmlFor="contact-email" className="block text-sm font-medium text-foreground mb-2">
-                    Email
+                  <label htmlFor="contact-subject" className="block text-sm font-medium text-foreground mb-2">
+                    Asunto
                   </label>
-                  <Input id="contact-email" name="email" type="email" placeholder="tu@email.com" required />
+                  <Input id="contact-subject" name="asunto" placeholder="¿En qué podemos ayudarte?" />
                 </div>
-              </div>
 
-              <div>
-                <label htmlFor="contact-subject" className="block text-sm font-medium text-foreground mb-2">
-                  Asunto
-                </label>
-                <Input id="contact-subject" name="asunto" placeholder="¿En qué podemos ayudarte?" />
-              </div>
+                <div>
+                  <label htmlFor="contact-message" className="block text-sm font-medium text-foreground mb-2">
+                    Mensaje
+                  </label>
+                  <Textarea
+                    id="contact-message"
+                    name="mensaje"
+                    placeholder="Cuéntanos más sobre tu consulta o propuesta..."
+                    className="min-h-[120px]"
+                    required
+                  />
+                </div>
 
-              <div>
-                <label htmlFor="contact-message" className="block text-sm font-medium text-foreground mb-2">
-                  Mensaje
-                </label>
-                <Textarea
-                  id="contact-message"
-                  name="mensaje"
-                  placeholder="Cuéntanos más sobre tu consulta o propuesta..."
-                  className="min-h-[120px]"
-                  required
-                />
-              </div>
-
-              <Button type="submit" className="w-full bg-secondary hover:bg-secondary/90" size="lg">
-                <Send className="w-5 h-5 mr-2" />
-                Enviar Mensaje
-              </Button>
+                <Button type="submit" className="w-full bg-secondary hover:bg-secondary/90" size="lg">
+                  <Send className="w-5 h-5 mr-2" />
+                  Enviar Mensaje
+                </Button>
+              </fieldset>
             </form>
           </Card>
         </div>

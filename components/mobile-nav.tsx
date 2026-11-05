@@ -49,17 +49,6 @@ export function MobileNav({ links }: { links: NavLink[] }) {
             </a>
           ))}
         </nav>
-        <div className="px-4 pt-2">
-          <Button
-            asChild
-            variant="outline"
-            className="w-full border-primary text-primary hover:bg-primary hover:text-white bg-transparent transition-all duration-300 active:scale-95"
-          >
-            <a href="#contacto" onClick={(event) => handleNavigate(event, "#contacto")}>
-              Contacto
-            </a>
-          </Button>
-        </div>
       </SheetContent>
     </Sheet>
   )
