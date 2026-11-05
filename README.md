@@ -39,6 +39,21 @@ Definida como variables CSS en `app/globals.css`:
 | `--muted` | `#b1c3cb` | Gris azulado de fondos |
 | `--background` | `#ffffff` | Fondo |
 
+### Modo oscuro
+
+La página tiene modo claro y oscuro ([next-themes](https://github.com/pacocoursey/next-themes)). Por defecto sigue la preferencia del sistema operativo del usuario; el botón sol/luna de la cabecera (`components/theme-toggle.tsx`) permite cambiarlo, y la elección se recuerda en el navegador (`localStorage`).
+
+El modo oscuro reutiliza la misma paleta (bloque `.dark` en `app/globals.css`), reasignada para que los textos sean legibles sobre fondo oscuro:
+
+| Token | Color | Uso |
+| --- | --- | --- |
+| `--background` | `#192064` | Fondo azul oscuro |
+| `--card` | `#23286b` | Tarjetas (azul oscuro con 15 % del morado principal) |
+| `--primary` | `#9a8bcb` | Morado claro |
+| `--secondary` | `#b1c3cb` | Gris azulado |
+| `--accent` | `#729ec6` | Azul `#145da0` aclarado |
+| `--muted` | `#5d5491` | Morado principal en fondos |
+
 ## Requisitos
 
 - Node.js 18.17 o superior

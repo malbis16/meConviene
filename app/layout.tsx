@@ -4,6 +4,7 @@ import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
+import { ThemeProvider } from "@/components/theme-provider"
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -16,7 +17,10 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#5d5491",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#5d5491" },
+    { media: "(prefers-color-scheme: dark)", color: "#192064" },
+  ],
 }
 
 export default function RootLayout({
@@ -25,9 +29,12 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="es">
+    <html lang="es" suppressHydrationWarning>
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
-        <Suspense fallback={<div className="min-h-screen bg-background" />}>{children}</Suspense>
+        {/* Por defecto sigue el modo del sistema; la elección del usuario se guarda en localStorage */}
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <Suspense fallback={<div className="min-h-screen bg-background" />}>{children}</Suspense>
+        </ThemeProvider>
         <Suspense fallback={null}>
           <Analytics />
         </Suspense>

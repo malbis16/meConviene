@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { MobileNav } from "@/components/mobile-nav"
+import { ThemeToggle } from "@/components/theme-toggle"
 import Image from "next/image"
 
 const navLinks = [
@@ -12,7 +13,7 @@ const navLinks = [
 export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto px-4 h-16 flex items-center justify-between">
+      <div className="container mx-auto px-4 h-16 flex items-center justify-between gap-3">
         <div className="flex items-center">
           <Image
             src="/images/meconviene-logo.png"
@@ -35,13 +36,14 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-2 sm:space-x-4">
           <Button
             disabled
-            className="bg-primary hover:bg-primary/90 shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-0.5 hover:shadow-xl active:scale-95 motion-reduce:transition-none motion-reduce:hover:scale-100 motion-reduce:hover:translate-y-0"
+            className="h-8 px-2.5 text-xs min-[360px]:h-9 min-[360px]:px-3 min-[360px]:text-sm sm:px-4 bg-primary hover:bg-primary/90 shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-0.5 hover:shadow-xl active:scale-95 motion-reduce:transition-none motion-reduce:hover:scale-100 motion-reduce:hover:translate-y-0"
           >
             Descargar App
           </Button>
+          <ThemeToggle />
           <MobileNav links={navLinks} />
         </div>
       </div>
