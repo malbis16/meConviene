@@ -80,7 +80,7 @@ export function HeroSection() {
                 asChild
                 size="lg"
                 variant="outline"
-                className="text-lg px-8 bg-transparent border-2 border-secondary text-secondary hover:bg-secondary hover:text-white transform hover:scale-105 transition-all duration-300"
+                className="text-lg px-8 bg-transparent border-2 border-secondary text-secondary hover:bg-secondary hover:text-white dark:hover:text-secondary-foreground transform hover:scale-105 transition-all duration-300"
               >
                 <a href="https://youtu.be/UN_aS85WLj0" target="_blank" rel="noopener noreferrer">
                   Ver Demo

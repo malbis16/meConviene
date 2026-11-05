@@ -38,7 +38,7 @@ export function AboutSection() {
 
         <div ref={cardsRef} className="grid md:grid-cols-2 gap-8 mb-16">
           <Card
-            className={`p-8 border-2 hover:border-primary/50 transition-all duration-700 transform hover:scale-105 hover:shadow-2xl group bg-gradient-to-br from-white to-primary/5 ${
+            className={`p-8 border-2 hover:border-primary/50 transition-all duration-700 transform hover:scale-105 hover:shadow-2xl group bg-gradient-to-br from-card to-primary/5 ${
               cardsVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
             }`}
           >
@@ -56,7 +56,7 @@ export function AboutSection() {
           </Card>
 
           <Card
-            className={`p-8 border-2 hover:border-secondary/50 transition-all duration-700 delay-200 transform hover:scale-105 hover:shadow-2xl group bg-gradient-to-br from-white to-secondary/5 ${
+            className={`p-8 border-2 hover:border-secondary/50 transition-all duration-700 delay-200 transform hover:scale-105 hover:shadow-2xl group bg-gradient-to-br from-card to-secondary/5 ${
               cardsVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-12"
             }`}
           >
@@ -84,23 +84,23 @@ export function AboutSection() {
             Nuestros Valores
           </h3>
           <div className="flex flex-wrap justify-center gap-4">
-            <Badge className="text-sm py-3 px-6 max-w-full whitespace-normal text-center bg-primary text-white border-0 hover:scale-110 transition-transform duration-300 shadow-lg">
+            <Badge className="text-sm py-3 px-6 max-w-full whitespace-normal text-center bg-primary text-primary-foreground border-0 hover:scale-110 transition-transform duration-300 shadow-lg">
               <Sparkles className="w-4 h-4 mr-2" />
               Transparencia
             </Badge>
-            <Badge className="text-sm py-3 px-6 max-w-full whitespace-normal text-center bg-accent text-white border-0 hover:scale-110 transition-transform duration-300 shadow-lg animation-delay-200">
+            <Badge className="text-sm py-3 px-6 max-w-full whitespace-normal text-center bg-accent text-accent-foreground border-0 hover:scale-110 transition-transform duration-300 shadow-lg animation-delay-200">
               <Sparkles className="w-4 h-4 mr-2" />
               Innovación
             </Badge>
-            <Badge className="text-sm py-3 px-6 max-w-full whitespace-normal text-center bg-primary text-white border-0 hover:scale-110 transition-transform duration-300 shadow-lg animation-delay-400">
+            <Badge className="text-sm py-3 px-6 max-w-full whitespace-normal text-center bg-primary text-primary-foreground border-0 hover:scale-110 transition-transform duration-300 shadow-lg animation-delay-400">
               <Sparkles className="w-4 h-4 mr-2" />
               Imparcialidad
             </Badge>
-            <Badge className="text-sm py-3 px-6 max-w-full whitespace-normal text-center bg-accent text-white border-0 hover:scale-110 transition-transform duration-300 shadow-lg animation-delay-600">
+            <Badge className="text-sm py-3 px-6 max-w-full whitespace-normal text-center bg-accent text-accent-foreground border-0 hover:scale-110 transition-transform duration-300 shadow-lg animation-delay-600">
               <Sparkles className="w-4 h-4 mr-2" />
               Cercanía con el usuario
             </Badge>
-            <Badge className="text-sm py-3 px-6 max-w-full whitespace-normal text-center bg-primary text-white border-0 hover:scale-110 transition-transform duration-300 shadow-lg animation-delay-800">
+            <Badge className="text-sm py-3 px-6 max-w-full whitespace-normal text-center bg-primary text-primary-foreground border-0 hover:scale-110 transition-transform duration-300 shadow-lg animation-delay-800">
               <Sparkles className="w-4 h-4 mr-2" />
               Compromiso con el desarrollo digital
             </Badge>

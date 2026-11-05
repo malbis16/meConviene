@@ -77,7 +77,7 @@ export function BusinessCanvasSection() {
                 disabled
                 size="lg"
                 variant="outline"
-                className="text-lg px-8 bg-transparent border-2 border-secondary text-secondary hover:bg-secondary hover:text-white transform hover:scale-105 transition-all duration-300"
+                className="text-lg px-8 bg-transparent border-2 border-secondary text-secondary hover:bg-secondary hover:text-white dark:hover:text-secondary-foreground transform hover:scale-105 transition-all duration-300"
               >
                 Contactar Ventas
               </Button>
